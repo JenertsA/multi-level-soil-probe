@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.15" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
+<grid distance="0.2" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -185,6 +185,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyOTc0OGQ4" projecturn="a.cGVyc29uYWw6dWUyOTc0OGQ4IzIwMjAwNDI3MjkxNTE5OTgx" f3durn="urn:adsk.wipprod:dm.lineage:Bo1BAuKDRDaQlFkx7GtrUQ" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="f0172f22-3654-4482-bb5c-f14f2526e543" lastsyncedrevisionid="f0172f22-3654-4482-bb5c-f14f2526e543" lastboardhashguid="f990b1cf-13b7-bbf3-6f1d-2f154d262e3f" lastpushedtime="2021-10-27T11:02:03Z" linktopcb3d="true"/>
 <plain>
 <circle x="9.5" y="18" radius="1.9" width="0.2" layer="41"/>
 <circle x="9.5" y="2" radius="1.9" width="0.2" layer="41"/>
@@ -193,14 +194,14 @@
 <wire x1="9.5" y1="20" x2="9.5" y2="0" width="0.3" layer="49"/>
 <wire x1="4.5" y1="20" x2="4.5" y2="0" width="0.3" layer="49"/>
 <wire x1="14.5" y1="20" x2="14.5" y2="0" width="0.3" layer="49"/>
-<wire x1="0" y1="2" x2="0" y2="18" width="0" layer="20"/>
-<wire x1="0" y1="18" x2="2" y2="20" width="0" layer="20" curve="-90"/>
-<wire x1="2" y1="20" x2="17" y2="20" width="0" layer="20"/>
-<wire x1="17" y1="20" x2="19" y2="18" width="0" layer="20" curve="-90"/>
-<wire x1="19" y1="18" x2="19" y2="2" width="0" layer="20"/>
-<wire x1="19" y1="2" x2="17" y2="0" width="0" layer="20" curve="-90"/>
-<wire x1="17" y1="0" x2="2" y2="0" width="0" layer="20"/>
-<wire x1="2" y1="0" x2="0" y2="2" width="0" layer="20" curve="-90"/>
+<wire x1="0" y1="4" x2="0" y2="16" width="0" layer="20"/>
+<wire x1="0" y1="16" x2="4" y2="20" width="0" layer="20" curve="-90"/>
+<wire x1="4" y1="20" x2="15" y2="20" width="0" layer="20"/>
+<wire x1="15" y1="20" x2="19" y2="16" width="0" layer="20" curve="-90"/>
+<wire x1="19" y1="16" x2="19" y2="4" width="0" layer="20"/>
+<wire x1="19" y1="4" x2="15" y2="0" width="0" layer="20" curve="-90"/>
+<wire x1="15" y1="0" x2="4" y2="0" width="0" layer="20"/>
+<wire x1="4" y1="0" x2="0" y2="4" width="0" layer="20" curve="-90"/>
 <polygon width="0" layer="30">
 <vertex x="8.5" y="15"/>
 <vertex x="8.5" y="13"/>
@@ -220,8 +221,8 @@
 <text x="7" y="12.3" size="0.8" layer="121" font="vector" ratio="15" distance="51" align="bottom-center">A0</text>
 <text x="7.05" y="10.45" size="0.8" layer="121" font="vector" ratio="15" distance="51" align="bottom-center">A1</text>
 <text x="7" y="8.6" size="0.8" layer="121" font="vector" ratio="15" distance="51" align="bottom-center">A2</text>
-<text x="4.48" y="0.61" size="0.8" layer="121" font="vector" ratio="20" align="bottom-center">A.JENERTS</text>
-<text x="14.47" y="0.6" size="0.8" layer="121" font="vector" ratio="20" align="bottom-center">Oct. 2021</text>
+<text x="4.95" y="0.62" size="0.8" layer="121" font="vector" ratio="20" align="bottom-center">A.JENERTS</text>
+<text x="14" y="0.61" size="0.8" layer="121" font="vector" ratio="20" align="bottom-center">Oct. 2021</text>
 <text x="1.23" y="14.09" size="0.8" layer="122" font="vector" ratio="15" distance="51" rot="MR0" align="bottom-center">0</text>
 <text x="1.24" y="12.09" size="0.8" layer="122" font="vector" ratio="15" distance="51" rot="MR0" align="bottom-center">1</text>
 <text x="1.26" y="10.1" size="0.8" layer="122" font="vector" ratio="15" distance="51" rot="MR0" align="bottom-center">2</text>
@@ -229,9 +230,118 @@
 <text x="1.25" y="6.1" size="0.8" layer="122" font="vector" ratio="15" distance="51" rot="MR0" align="bottom-center">4</text>
 </plain>
 <libraries>
-<library name="SIG_Parts">
+<library name="temp_sens_ring" urn="urn:adsk.eagle:library:31797301">
+<description>Generated from &lt;b&gt;temp_sens_ring.sch&lt;/b&gt;&lt;p&gt;
+by exp-lbrs-replace2.ulp</description>
 <packages>
-<package name="FFC_1X10_VERTICAL">
+<package name="C0402" urn="urn:adsk.eagle:footprint:31797387/1" library_version="3">
+<wire x1="0.3945" y1="-0.712" x2="0.2675" y2="-0.839" width="0.0762" layer="21" curve="-90"/>
+<wire x1="0.2675" y1="-0.839" x2="-0.2675" y2="-0.839" width="0.0762" layer="21"/>
+<wire x1="-0.2675" y1="-0.839" x2="-0.3945" y2="-0.712" width="0.0762" layer="21" curve="-90"/>
+<wire x1="-0.3945" y1="-0.712" x2="-0.3945" y2="0.712" width="0.0762" layer="21"/>
+<wire x1="-0.3945" y1="0.712" x2="-0.2675" y2="0.839" width="0.0762" layer="21" curve="-90"/>
+<wire x1="-0.2675" y1="0.839" x2="0.2675" y2="0.839" width="0.0762" layer="21"/>
+<wire x1="0.2675" y1="0.839" x2="0.3945" y2="0.712" width="0.0762" layer="21" curve="-90"/>
+<wire x1="0.3945" y1="0.712" x2="0.3945" y2="-0.712" width="0.0762" layer="21"/>
+<smd name="1" x="0" y="0.4625" dx="0.5" dy="0.5" layer="1" roundness="50" rot="R270"/>
+<smd name="2" x="0" y="-0.4625" dx="0.5" dy="0.5" layer="1" roundness="50" rot="R270"/>
+<text x="0.635" y="1.27" size="0.889" layer="25" ratio="11" rot="R270">&gt;NAME</text>
+<text x="-1.524" y="1.397" size="0.635" layer="27" font="vector" ratio="10" rot="R270">&gt;VALUE</text>
+<polygon width="0.0254" layer="51">
+<vertex x="0.254" y="0.508"/>
+<vertex x="0.254" y="-0.508"/>
+<vertex x="-0.254" y="-0.508"/>
+<vertex x="-0.254" y="0.508"/>
+</polygon>
+</package>
+<package name="0402" urn="urn:adsk.eagle:footprint:31797246/1">
+<wire x1="0.3945" y1="-0.712" x2="0.2675" y2="-0.839" width="0.0762" layer="21" curve="-90"/>
+<wire x1="0.2675" y1="-0.839" x2="-0.2675" y2="-0.839" width="0.0762" layer="21"/>
+<wire x1="-0.2675" y1="-0.839" x2="-0.3945" y2="-0.712" width="0.0762" layer="21" curve="-90"/>
+<wire x1="-0.3945" y1="-0.712" x2="-0.3945" y2="0.712" width="0.0762" layer="21"/>
+<wire x1="-0.3945" y1="0.712" x2="-0.2675" y2="0.839" width="0.0762" layer="21" curve="-90"/>
+<wire x1="-0.2675" y1="0.839" x2="0.2675" y2="0.839" width="0.0762" layer="21"/>
+<wire x1="0.2675" y1="0.839" x2="0.3945" y2="0.712" width="0.0762" layer="21" curve="-90"/>
+<wire x1="0.3945" y1="0.712" x2="0.3945" y2="-0.712" width="0.0762" layer="21"/>
+<smd name="1" x="0" y="0.4625" dx="0.5" dy="0.5" layer="1" roundness="50" rot="R270"/>
+<smd name="2" x="0" y="-0.4625" dx="0.5" dy="0.5" layer="1" roundness="50" rot="R270"/>
+<text x="0.635" y="1.27" size="0.889" layer="25" ratio="11" rot="R270">&gt;NAME</text>
+<text x="-1.524" y="1.397" size="0.635" layer="27" font="vector" ratio="10" rot="R270">&gt;VALUE</text>
+<polygon width="0.0254" layer="51">
+<vertex x="0.254" y="0.508"/>
+<vertex x="0.254" y="-0.508"/>
+<vertex x="-0.254" y="-0.508"/>
+<vertex x="-0.254" y="0.508"/>
+</polygon>
+</package>
+<package name="MSOP-8" urn="urn:adsk.eagle:footprint:31797243/1">
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<smd name="P$1" x="-0.975" y="-2.2" dx="0.45" dy="1.45" layer="1"/>
+<smd name="P$2" x="-0.325" y="-2.2" dx="0.45" dy="1.45" layer="1"/>
+<smd name="P$3" x="0.325" y="-2.2" dx="0.45" dy="1.45" layer="1"/>
+<smd name="P$4" x="0.975" y="-2.2" dx="0.45" dy="1.45" layer="1"/>
+<smd name="P$5" x="0.975" y="2.2" dx="0.45" dy="1.45" layer="1"/>
+<smd name="P$6" x="0.325" y="2.2" dx="0.45" dy="1.45" layer="1"/>
+<smd name="P$7" x="-0.325" y="2.2" dx="0.45" dy="1.45" layer="1"/>
+<smd name="P$8" x="-0.975" y="2.2" dx="0.45" dy="1.45" layer="1"/>
+<text x="-1.75" y="-1.25" size="0.5" layer="25" rot="R90">&gt;NAME</text>
+<text x="2.25" y="-1.25" size="0.5" layer="27" rot="R90">&gt;VALUE</text>
+<polygon width="0.01" layer="21" spacing="1">
+<vertex x="-1.75" y="-1.75" curve="-90"/>
+<vertex x="-1.5" y="-2" curve="-90"/>
+<vertex x="-1.75" y="-2.25" curve="-90"/>
+<vertex x="-2" y="-2" curve="-90"/>
+</polygon>
+</package>
+<package name="SMT_JUMP_2_NO_SMALL" urn="urn:adsk.eagle:footprint:31797234/1">
+<wire x1="0.5366" y1="-0.408" x2="-0.5366" y2="-0.408" width="0.15" layer="21"/>
+<wire x1="0.5366" y1="0.408" x2="0.7406" y2="0.204" width="0.15" layer="21" curve="-90"/>
+<wire x1="-0.7406" y1="0.204" x2="-0.5366" y2="0.408" width="0.15" layer="21" curve="-90"/>
+<wire x1="-0.7406" y1="-0.204" x2="-0.5366" y2="-0.408" width="0.15" layer="21" curve="90"/>
+<wire x1="0.5366" y1="-0.408" x2="0.7406" y2="-0.204" width="0.15" layer="21" curve="90"/>
+<wire x1="0.7406" y1="-0.204" x2="0.7406" y2="0.204" width="0.15" layer="21"/>
+<wire x1="-0.7406" y1="-0.204" x2="-0.7406" y2="0.204" width="0.15" layer="21"/>
+<wire x1="-0.5366" y1="0.408" x2="0.5366" y2="0.408" width="0.15" layer="21"/>
+<smd name="1" x="-0.3314" y="0" dx="0.5" dy="0.5" layer="1" roundness="25" cream="no"/>
+<smd name="2" x="0.3314" y="0" dx="0.5" dy="0.5" layer="1" roundness="25" cream="no"/>
+<text x="0" y="0.635" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.635" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
+<package name="SMT-JUMPER_2_NO_NO-SILK" urn="urn:adsk.eagle:footprint:31797233/1">
+<smd name="1" x="-0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
+<package name="R0502_4X" urn="urn:adsk.eagle:footprint:31797241/1">
+<wire x1="-0.7" y1="0.2" x2="0.7" y2="0.2" width="0.2" layer="21"/>
+<wire x1="0.7" y1="0.2" x2="0.7" y2="-0.2" width="0.2" layer="21"/>
+<wire x1="0.7" y1="-0.2" x2="-0.7" y2="-0.2" width="0.2" layer="21"/>
+<wire x1="-0.7" y1="-0.2" x2="-0.7" y2="0.2" width="0.2" layer="21"/>
+<smd name="P$1" x="-0.6" y="-0.3" dx="0.3" dy="0.2" layer="1" rot="R90"/>
+<smd name="P$2" x="-0.2" y="-0.3" dx="0.3" dy="0.2" layer="1" rot="R90"/>
+<smd name="P$3" x="0.2" y="-0.3" dx="0.3" dy="0.2" layer="1" rot="R90"/>
+<smd name="P$4" x="0.6" y="-0.3" dx="0.3" dy="0.2" layer="1" rot="R90"/>
+<smd name="P$5" x="0.6" y="0.3" dx="0.3" dy="0.2" layer="1" rot="R270"/>
+<smd name="P$6" x="0.2" y="0.3" dx="0.3" dy="0.2" layer="1" rot="R270"/>
+<smd name="P$7" x="-0.2" y="0.3" dx="0.3" dy="0.2" layer="1" rot="R270"/>
+<smd name="P$8" x="-0.6" y="0.3" dx="0.3" dy="0.2" layer="1" rot="R270"/>
+<text x="-1.524" y="0.762" size="0.8" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-1.524" y="-1.524" size="0.8" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+</package>
+<package name="FFC_1X10_VERTICAL" urn="urn:adsk.eagle:footprint:31797244/1">
+<wire x1="-7.6" y1="1.25" x2="-7.6" y2="-1.25" width="0.2" layer="21"/>
+<wire x1="-7.6" y1="-1.25" x2="7.6" y2="-1.25" width="0.2" layer="21"/>
+<wire x1="7.6" y1="-1.25" x2="7.6" y2="1.25" width="0.2" layer="21"/>
+<wire x1="7.6" y1="1.25" x2="5.5" y2="1.25" width="0.2" layer="21"/>
+<wire x1="5.5" y1="1.25" x2="-5.5" y2="1.25" width="0.2" layer="21"/>
+<wire x1="-5.5" y1="1.25" x2="-7.6" y2="1.25" width="0.2" layer="21"/>
+<wire x1="-5.5" y1="1.25" x2="-5.5" y2="0" width="0.2" layer="21"/>
+<wire x1="-5.5" y1="0" x2="5.5" y2="0" width="0.2" layer="21"/>
+<wire x1="5.5" y1="0" x2="5.5" y2="1.25" width="0.2" layer="21"/>
 <smd name="P$1" x="-4.5" y="-1.75" dx="2" dy="0.6" layer="1" rot="R90"/>
 <smd name="P$2" x="-3.5" y="1.75" dx="2" dy="0.6" layer="1" rot="R90"/>
 <smd name="P$3" x="-2.5" y="-1.75" dx="2" dy="0.6" layer="1" rot="R90"/>
@@ -244,128 +354,54 @@
 <smd name="P$10" x="4.5" y="1.75" dx="2" dy="0.6" layer="1" rot="R90"/>
 <smd name="P$11" x="-6.9" y="0" dx="2.6" dy="2.9" layer="1" rot="R180"/>
 <smd name="P$12" x="6.9" y="0" dx="2.6" dy="2.9" layer="1" rot="R180"/>
-<wire x1="-7.6" y1="1.25" x2="-7.6" y2="-1.25" width="0.2" layer="21"/>
-<wire x1="-7.6" y1="-1.25" x2="7.6" y2="-1.25" width="0.2" layer="21"/>
-<wire x1="7.6" y1="-1.25" x2="7.6" y2="1.25" width="0.2" layer="21"/>
-<wire x1="7.6" y1="1.25" x2="5.5" y2="1.25" width="0.2" layer="21"/>
-<wire x1="5.5" y1="1.25" x2="-5.5" y2="1.25" width="0.2" layer="21"/>
-<wire x1="-5.5" y1="1.25" x2="-7.6" y2="1.25" width="0.2" layer="21"/>
-<wire x1="-5.5" y1="1.25" x2="-5.5" y2="0" width="0.2" layer="21"/>
-<wire x1="-5.5" y1="0" x2="5.5" y2="0" width="0.2" layer="21"/>
-<wire x1="5.5" y1="0" x2="5.5" y2="1.25" width="0.2" layer="21"/>
-<polygon width="0.2" layer="40">
+<polygon width="0.2" layer="39">
 <vertex x="-7.6" y="1.25"/>
 <vertex x="-8.5" y="1.25"/>
 <vertex x="-8.5" y="-1.25"/>
 <vertex x="-7.6" y="-1.25"/>
 </polygon>
-<polygon width="0.2" layer="40">
+<polygon width="0.2" layer="39">
 <vertex x="7.6" y="-1.25"/>
 <vertex x="7.6" y="1.25"/>
 <vertex x="8.5" y="1.25"/>
 <vertex x="8.5" y="-1.25"/>
 </polygon>
 </package>
-<package name="MSOP-8">
-<smd name="P$1" x="-0.975" y="-2.2" dx="0.45" dy="1.45" layer="1"/>
-<smd name="P$2" x="-0.325" y="-2.2" dx="0.45" dy="1.45" layer="1"/>
-<smd name="P$3" x="0.325" y="-2.2" dx="0.45" dy="1.45" layer="1"/>
-<smd name="P$4" x="0.975" y="-2.2" dx="0.45" dy="1.45" layer="1"/>
-<smd name="P$8" x="-0.975" y="2.2" dx="0.45" dy="1.45" layer="1"/>
-<smd name="P$7" x="-0.325" y="2.2" dx="0.45" dy="1.45" layer="1"/>
-<smd name="P$6" x="0.325" y="2.2" dx="0.45" dy="1.45" layer="1"/>
-<smd name="P$5" x="0.975" y="2.2" dx="0.45" dy="1.45" layer="1"/>
-<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
-<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
-<polygon width="0.01" layer="21" spacing="1">
-<vertex x="-1.75" y="-1.75" curve="-90"/>
-<vertex x="-1.5" y="-2" curve="-90"/>
-<vertex x="-1.75" y="-2.25" curve="-90"/>
-<vertex x="-2" y="-2" curve="-90"/>
-</polygon>
-<text x="-1.75" y="-1.25" size="0.5" layer="25" rot="R90">&gt;NAME</text>
-<text x="2.25" y="-1.25" size="0.5" layer="27" rot="R90">&gt;VALUE</text>
-</package>
-<package name="0402">
-<smd name="1" x="0" y="0.4625" dx="0.5" dy="0.5" layer="1" roundness="50" rot="R270"/>
-<smd name="2" x="0" y="-0.4625" dx="0.5" dy="0.5" layer="1" roundness="50" rot="R270"/>
-<text x="0.635" y="1.27" size="0.889" layer="25" ratio="11" rot="R270">&gt;NAME</text>
-<text x="-1.524" y="1.397" size="0.635" layer="27" font="vector" ratio="10" rot="R270">&gt;VALUE</text>
-<polygon width="0.0254" layer="51">
-<vertex x="0.254" y="0.508"/>
-<vertex x="0.254" y="-0.508"/>
-<vertex x="-0.254" y="-0.508"/>
-<vertex x="-0.254" y="0.508"/>
-</polygon>
-<wire x1="0.3945" y1="-0.712" x2="0.2675" y2="-0.839" width="0.0762" layer="21" curve="-90"/>
-<wire x1="0.2675" y1="-0.839" x2="-0.2675" y2="-0.839" width="0.0762" layer="21"/>
-<wire x1="-0.2675" y1="-0.839" x2="-0.3945" y2="-0.712" width="0.0762" layer="21" curve="-90"/>
-<wire x1="-0.3945" y1="-0.712" x2="-0.3945" y2="0.712" width="0.0762" layer="21"/>
-<wire x1="-0.3945" y1="0.712" x2="-0.2675" y2="0.839" width="0.0762" layer="21" curve="-90"/>
-<wire x1="-0.2675" y1="0.839" x2="0.2675" y2="0.839" width="0.0762" layer="21"/>
-<wire x1="0.2675" y1="0.839" x2="0.3945" y2="0.712" width="0.0762" layer="21" curve="-90"/>
-<wire x1="0.3945" y1="0.712" x2="0.3945" y2="-0.712" width="0.0762" layer="21"/>
-</package>
-<package name="SMT_JUMP_2_NO_SMALL">
-<text x="0" y="0.635" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.635" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<wire x1="0.5366" y1="-0.408" x2="-0.5366" y2="-0.408" width="0.15" layer="21"/>
-<wire x1="0.5366" y1="0.408" x2="0.7406" y2="0.204" width="0.15" layer="21" curve="-90"/>
-<wire x1="-0.7406" y1="0.204" x2="-0.5366" y2="0.408" width="0.15" layer="21" curve="-90"/>
-<wire x1="-0.7406" y1="-0.204" x2="-0.5366" y2="-0.408" width="0.15" layer="21" curve="90"/>
-<wire x1="0.5366" y1="-0.408" x2="0.7406" y2="-0.204" width="0.15" layer="21" curve="90"/>
-<wire x1="0.7406" y1="-0.204" x2="0.7406" y2="0.204" width="0.15" layer="21"/>
-<wire x1="-0.7406" y1="-0.204" x2="-0.7406" y2="0.204" width="0.15" layer="21"/>
-<wire x1="-0.5366" y1="0.408" x2="0.5366" y2="0.408" width="0.15" layer="21"/>
-<smd name="1" x="-0.3314" y="0" dx="0.5" dy="0.5" layer="1" roundness="25" cream="no"/>
-<smd name="2" x="0.3314" y="0" dx="0.5" dy="0.5" layer="1" roundness="25" cream="no"/>
-</package>
-<package name="R0502_4X">
-<smd name="P$1" x="-0.6" y="-0.3" dx="0.3" dy="0.2" layer="1" rot="R90"/>
-<smd name="P$2" x="-0.2" y="-0.3" dx="0.3" dy="0.2" layer="1" rot="R90"/>
-<smd name="P$3" x="0.2" y="-0.3" dx="0.3" dy="0.2" layer="1" rot="R90"/>
-<smd name="P$4" x="0.6" y="-0.3" dx="0.3" dy="0.2" layer="1" rot="R90"/>
-<smd name="P$5" x="0.6" y="0.3" dx="0.3" dy="0.2" layer="1" rot="R270"/>
-<smd name="P$6" x="0.2" y="0.3" dx="0.3" dy="0.2" layer="1" rot="R270"/>
-<smd name="P$7" x="-0.2" y="0.3" dx="0.3" dy="0.2" layer="1" rot="R270"/>
-<smd name="P$8" x="-0.6" y="0.3" dx="0.3" dy="0.2" layer="1" rot="R270"/>
-<wire x1="-0.7" y1="0.2" x2="0.7" y2="0.2" width="0.2" layer="21"/>
-<wire x1="0.7" y1="0.2" x2="0.7" y2="-0.2" width="0.2" layer="21"/>
-<wire x1="0.7" y1="-0.2" x2="-0.7" y2="-0.2" width="0.2" layer="21"/>
-<wire x1="-0.7" y1="-0.2" x2="-0.7" y2="0.2" width="0.2" layer="21"/>
-<text x="-1.524" y="0.762" size="0.8" layer="25" font="vector" ratio="15">&gt;NAME</text>
-<text x="-1.524" y="-1.524" size="0.8" layer="27" font="vector" ratio="15">&gt;VALUE</text>
-</package>
-</packages>
-</library>
-<library name="SparkFun-Jumpers" urn="urn:adsk.eagle:library:528">
-<description>&lt;h3&gt;SparkFun Jumpers&lt;/h3&gt;
-In this library you'll find jumpers, or other semipermanent means of changing current paths. The least permanent form is the solder jumper. These can be changed by adding, removing, or moving solder. In cases that are less likely to be changed we have jumpers that are connected with traces. These can be cut with a razor, or reconnected with solder. Reference designator JP.
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="SMT-JUMPER_2_NO_NO-SILK" urn="urn:adsk.eagle:footprint:39252/1" library_version="1">
-<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<smd name="1" x="-0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-</package>
 </packages>
 <packages3d>
-<package3d name="SMT-JUMPER_2_NO_NO-SILK" urn="urn:adsk.eagle:package:39277/1" type="box" library_version="1">
+<package3d name="FFC_1X10_VERTICAL" urn="urn:adsk.eagle:package:31797271/2" type="model" library_version="3">
+<packageinstances>
+<packageinstance name="FFC_1X10_VERTICAL"/>
+</packageinstances>
+</package3d>
+<package3d name="MSOP-8" urn="urn:adsk.eagle:package:31797270/2" type="model" library_version="3">
+<packageinstances>
+<packageinstance name="MSOP-8"/>
+</packageinstances>
+</package3d>
+<package3d name="0402" urn="urn:adsk.eagle:package:31797273/2" type="model" library_version="3">
+<packageinstances>
+<packageinstance name="0402"/>
+</packageinstances>
+</package3d>
+<package3d name="C0402" urn="urn:adsk.eagle:package:31797388/2" type="model" library_version="3">
+<packageinstances>
+<packageinstance name="C0402"/>
+</packageinstances>
+</package3d>
+<package3d name="SMT-JUMPER_2_NO_NO-SILK" urn="urn:adsk.eagle:package:31797260/2" type="empty" library_version="4">
 <packageinstances>
 <packageinstance name="SMT-JUMPER_2_NO_NO-SILK"/>
+</packageinstances>
+</package3d>
+<package3d name="SMT_JUMP_2_NO_SMALL" urn="urn:adsk.eagle:package:31797261/2" type="empty" library_version="3">
+<packageinstances>
+<packageinstance name="SMT_JUMP_2_NO_SMALL"/>
+</packageinstances>
+</package3d>
+<package3d name="R0502_4X" urn="urn:adsk.eagle:package:31797268/2" type="model" library_version="3">
+<packageinstances>
+<packageinstance name="R0502_4X"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -379,7 +415,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="2layer_JLCPCB_2021_02">
+<designrules name="2layer_JLCPCB_2021_02 *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -396,7 +432,7 @@ necessary adjustments and save your customized
 design rules under a new name.</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mtIsolate" value="0.8mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
 <param name="mdWireWire" value="5mil"/>
 <param name="mdWirePad" value="0.2mm"/>
 <param name="mdWireVia" value="0.2mm"/>
@@ -563,61 +599,61 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="X1" library="SIG_Parts" package="FFC_1X10_VERTICAL" value="" x="3.2" y="10" smashed="yes" rot="R270">
+<element name="X1" library="temp_sens_ring" library_urn="urn:adsk.eagle:library:31797301" package="FFC_1X10_VERTICAL" package3d_urn="urn:adsk.eagle:package:31797271/2" value="" x="3.2" y="10" smashed="yes" rot="R270">
 <attribute name="MFR" value="XFCN" x="3.2" y="10" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR_PART" value="F1002-B-10-20T-R" x="3.2" y="10" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PITCH" value="1.00" x="3.2" y="10" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="IC1" library="SIG_Parts" package="MSOP-8" value="MCP9808" x="9.5" y="11" smashed="yes" rot="R180">
+<element name="IC1" library="temp_sens_ring" library_urn="urn:adsk.eagle:library:31797301" package="MSOP-8" package3d_urn="urn:adsk.eagle:package:31797270/2" value="MCP9808" x="9.5" y="11" smashed="yes" rot="R180">
 <attribute name="NAME" x="8.7292875" y="10.9792875" size="0.5" layer="25" rot="R45"/>
 <attribute name="VALUE" x="10.382759375" y="12.209090625" size="0.5" layer="27" rot="R225"/>
 </element>
-<element name="R1" library="SIG_Parts" package="0402" value="10K" x="7.09" y="13.56" smashed="yes" rot="R90">
+<element name="R1" library="temp_sens_ring" library_urn="urn:adsk.eagle:library:31797301" package="0402" package3d_urn="urn:adsk.eagle:package:31797273/2" value="10K" x="7.09" y="13.56" smashed="yes" rot="R90">
 <attribute name="NAME" x="6.42" y="14.045" size="0.3" layer="25" ratio="11"/>
 <attribute name="VALUE" x="7.133" y="14.056" size="0.3" layer="27" font="vector" ratio="11"/>
 </element>
-<element name="C1" library="SIG_Parts" package="0402" value="" x="10.97" y="7.15" smashed="yes" rot="R90">
+<element name="C1" library="temp_sens_ring" library_urn="urn:adsk.eagle:library:31797301" package="C0402" package3d_urn="urn:adsk.eagle:package:31797388/2" value="" x="10.97" y="7.15" smashed="yes" rot="R90">
 <attribute name="NAME" x="10.16" y="6.315" size="0.3" layer="25" ratio="11"/>
 <attribute name="VALUE" x="9.573" y="5.626" size="0.635" layer="27" font="vector" ratio="10"/>
 </element>
-<element name="JP4" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" package="SMT-JUMPER_2_NO_NO-SILK" package3d_urn="urn:adsk.eagle:package:39277/1" value="AL0" x="3.1" y="14.5" smashed="yes" rot="MR180">
+<element name="JP4" library="temp_sens_ring" library_urn="urn:adsk.eagle:library:31797301" package="SMT-JUMPER_2_NO_NO-SILK" package3d_urn="urn:adsk.eagle:package:31797260/2" value="AL0" x="3.1" y="14.5" smashed="yes" rot="MR180">
 <attribute name="NAME" x="4.64" y="14.817" size="0.6096" layer="26" font="vector" ratio="20" rot="MR180" align="bottom-center"/>
 <attribute name="VALUE" x="3.1" y="15.643" size="0.6096" layer="28" font="vector" ratio="20" rot="MR180" align="top-center"/>
 </element>
-<element name="JP5" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" package="SMT-JUMPER_2_NO_NO-SILK" package3d_urn="urn:adsk.eagle:package:39277/1" value="AL1" x="3.1" y="12.5" smashed="yes" rot="MR180">
+<element name="JP5" library="temp_sens_ring" library_urn="urn:adsk.eagle:library:31797301" package="SMT-JUMPER_2_NO_NO-SILK" package3d_urn="urn:adsk.eagle:package:31797260/2" value="AL1" x="3.1" y="12.5" smashed="yes" rot="MR180">
 <attribute name="NAME" x="4.7" y="12.797" size="0.6096" layer="26" font="vector" ratio="20" rot="MR180" align="bottom-center"/>
 <attribute name="VALUE" x="3.1" y="13.643" size="0.6096" layer="28" font="vector" ratio="20" rot="MR180" align="top-center"/>
 </element>
-<element name="JP6" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" package="SMT-JUMPER_2_NO_NO-SILK" package3d_urn="urn:adsk.eagle:package:39277/1" value="AL2" x="3.1" y="10.5" smashed="yes" rot="MR180">
+<element name="JP6" library="temp_sens_ring" library_urn="urn:adsk.eagle:library:31797301" package="SMT-JUMPER_2_NO_NO-SILK" package3d_urn="urn:adsk.eagle:package:31797260/2" value="AL2" x="3.1" y="10.5" smashed="yes" rot="MR180">
 <attribute name="NAME" x="4.64" y="10.797" size="0.6096" layer="26" font="vector" ratio="20" rot="MR180" align="bottom-center"/>
 <attribute name="VALUE" x="3.1" y="11.643" size="0.6096" layer="28" font="vector" ratio="20" rot="MR180" align="top-center"/>
 </element>
-<element name="JP7" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" package="SMT-JUMPER_2_NO_NO-SILK" package3d_urn="urn:adsk.eagle:package:39277/1" value="AL3" x="3.1" y="8.5" smashed="yes" rot="MR180">
+<element name="JP7" library="temp_sens_ring" library_urn="urn:adsk.eagle:library:31797301" package="SMT-JUMPER_2_NO_NO-SILK" package3d_urn="urn:adsk.eagle:package:31797260/2" value="AL3" x="3.1" y="8.5" smashed="yes" rot="MR180">
 <attribute name="NAME" x="4.67" y="8.767" size="0.6096" layer="26" font="vector" ratio="20" rot="MR180" align="bottom-center"/>
 <attribute name="VALUE" x="3.1" y="9.643" size="0.6096" layer="28" font="vector" ratio="20" rot="MR180" align="top-center"/>
 </element>
-<element name="JP8" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" package="SMT-JUMPER_2_NO_NO-SILK" package3d_urn="urn:adsk.eagle:package:39277/1" value="AL4" x="3.1" y="6.5" smashed="yes" rot="MR180">
+<element name="JP8" library="temp_sens_ring" library_urn="urn:adsk.eagle:library:31797301" package="SMT-JUMPER_2_NO_NO-SILK" package3d_urn="urn:adsk.eagle:package:31797260/2" value="AL4" x="3.1" y="6.5" smashed="yes" rot="MR180">
 <attribute name="NAME" x="4.64" y="6.817" size="0.6096" layer="26" font="vector" ratio="20" rot="MR180" align="bottom-center"/>
 <attribute name="VALUE" x="3.1" y="7.643" size="0.6096" layer="28" font="vector" ratio="20" rot="MR180" align="top-center"/>
 </element>
-<element name="X2" library="SIG_Parts" package="FFC_1X10_VERTICAL" value="" x="15.8" y="10" smashed="yes" rot="R90">
+<element name="X2" library="temp_sens_ring" library_urn="urn:adsk.eagle:library:31797301" package="FFC_1X10_VERTICAL" package3d_urn="urn:adsk.eagle:package:31797271/2" value="" x="15.8" y="10" smashed="yes" rot="R90">
 <attribute name="MFR" value="XFCN" x="15.8" y="10" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR_PART" value="F1002-B-10-20T-R" x="15.8" y="10" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PITCH" value="1.00" x="15.8" y="10" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="J2" library="SIG_Parts" package="SMT_JUMP_2_NO_SMALL" value="" x="7.01" y="11.81" smashed="yes" rot="R180">
+<element name="J2" library="temp_sens_ring" library_urn="urn:adsk.eagle:library:31797301" package="SMT_JUMP_2_NO_SMALL" package3d_urn="urn:adsk.eagle:package:31797261/2" value="" x="7.01" y="11.81" smashed="yes" rot="R180">
 <attribute name="NAME" x="7.01" y="11.83" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
 <attribute name="VALUE" x="7.01" y="12.445" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
-<element name="J1" library="SIG_Parts" package="SMT_JUMP_2_NO_SMALL" value="" x="7.02" y="9.95" smashed="yes" rot="R180">
+<element name="J1" library="temp_sens_ring" library_urn="urn:adsk.eagle:library:31797301" package="SMT_JUMP_2_NO_SMALL" package3d_urn="urn:adsk.eagle:package:31797261/2" value="" x="7.02" y="9.95" smashed="yes" rot="R180">
 <attribute name="NAME" x="7.01" y="9.945" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
 <attribute name="VALUE" x="7.02" y="10.585" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
-<element name="J3" library="SIG_Parts" package="SMT_JUMP_2_NO_SMALL" value="" x="7.02" y="8.1" smashed="yes" rot="R180">
+<element name="J3" library="temp_sens_ring" library_urn="urn:adsk.eagle:library:31797301" package="SMT_JUMP_2_NO_SMALL" package3d_urn="urn:adsk.eagle:package:31797261/2" value="" x="7.02" y="8.1" smashed="yes" rot="R180">
 <attribute name="NAME" x="7.02" y="8.075" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="center"/>
 <attribute name="VALUE" x="7.02" y="8.735" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
-<element name="R2" library="SIG_Parts" package="R0502_4X" value="" x="9.1" y="7.15" smashed="yes">
+<element name="R2" library="temp_sens_ring" library_urn="urn:adsk.eagle:library:31797301" package="R0502_4X" package3d_urn="urn:adsk.eagle:package:31797268/2" value="" x="9.1" y="7.15" smashed="yes">
 <attribute name="NAME" x="8.386" y="6.262" size="0.3" layer="25" font="vector" ratio="11"/>
 <attribute name="VALUE" x="7.576" y="5.626" size="0.8" layer="27" font="vector" ratio="15"/>
 </element>
@@ -695,18 +731,18 @@ design rules under a new name.</description>
 <vertex x="20" y="-1"/>
 <vertex x="20" y="21"/>
 </polygon>
-<via x="1.25" y="1.25" extent="1-16" drill="0.35"/>
-<via x="1.25" y="2.25" extent="1-16" drill="0.35"/>
-<via x="2.25" y="1.25" extent="1-16" drill="0.35"/>
-<via x="17.75" y="1.25" extent="1-16" drill="0.35"/>
-<via x="18" y="2.25" extent="1-16" drill="0.35"/>
-<via x="16.75" y="1" extent="1-16" drill="0.35"/>
-<via x="17.75" y="18.75" extent="1-16" drill="0.35"/>
-<via x="18" y="17.75" extent="1-16" drill="0.35"/>
-<via x="16.75" y="19" extent="1-16" drill="0.35"/>
-<via x="1.25" y="18.75" extent="1-16" drill="0.35"/>
-<via x="2.25" y="19" extent="1-16" drill="0.35"/>
-<via x="1" y="17.75" extent="1-16" drill="0.35"/>
+<via x="1.25" y="2.5" extent="1-16" drill="0.35"/>
+<via x="1.25" y="3.35" extent="1-16" drill="0.35"/>
+<via x="1.25" y="4.2" extent="1-16" drill="0.35"/>
+<via x="17.75" y="3.35" extent="1-16" drill="0.35"/>
+<via x="17.75" y="4.2" extent="1-16" drill="0.35"/>
+<via x="17.75" y="2.5" extent="1-16" drill="0.35"/>
+<via x="17.75" y="17" extent="1-16" drill="0.35"/>
+<via x="17.75" y="16" extent="1-16" drill="0.35"/>
+<via x="15.5" y="19" extent="1-16" drill="0.35"/>
+<via x="1.25" y="16" extent="1-16" drill="0.35"/>
+<via x="3.15" y="19" extent="1-16" drill="0.35"/>
+<via x="1.25" y="17" extent="1-16" drill="0.35"/>
 <via x="7.65" y="7.25" extent="1-16" drill="0.35"/>
 <via x="5.37" y="14.59" extent="1-16" drill="0.35"/>
 <via x="11.29" y="8.08" extent="1-16" drill="0.35"/>
@@ -992,6 +1028,11 @@ design rules under a new name.</description>
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
 with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
 </note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
