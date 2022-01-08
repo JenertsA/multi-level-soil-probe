@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
 <eagle version="9.6.2">
 <drawing>
 <settings>
@@ -494,6 +495,26 @@ Metric Code Size 1608</description>
 <text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
+<package name="C0402" urn="urn:adsk.eagle:footprint:31797387/1">
+<wire x1="0.3945" y1="-0.712" x2="0.2675" y2="-0.839" width="0.0762" layer="21" curve="-90"/>
+<wire x1="0.2675" y1="-0.839" x2="-0.2675" y2="-0.839" width="0.0762" layer="21"/>
+<wire x1="-0.2675" y1="-0.839" x2="-0.3945" y2="-0.712" width="0.0762" layer="21" curve="-90"/>
+<wire x1="-0.3945" y1="-0.712" x2="-0.3945" y2="0.712" width="0.0762" layer="21"/>
+<wire x1="-0.3945" y1="0.712" x2="-0.2675" y2="0.839" width="0.0762" layer="21" curve="-90"/>
+<wire x1="-0.2675" y1="0.839" x2="0.2675" y2="0.839" width="0.0762" layer="21"/>
+<wire x1="0.2675" y1="0.839" x2="0.3945" y2="0.712" width="0.0762" layer="21" curve="-90"/>
+<wire x1="0.3945" y1="0.712" x2="0.3945" y2="-0.712" width="0.0762" layer="21"/>
+<smd name="1" x="0" y="0.4625" dx="0.5" dy="0.5" layer="1" roundness="50" rot="R270"/>
+<smd name="2" x="0" y="-0.4625" dx="0.5" dy="0.5" layer="1" roundness="50" rot="R270"/>
+<text x="0.635" y="1.27" size="0.889" layer="25" ratio="11" rot="R270">&gt;NAME</text>
+<text x="-1.524" y="1.397" size="0.635" layer="27" font="vector" ratio="10" rot="R270">&gt;VALUE</text>
+<polygon width="0.0254" layer="51">
+<vertex x="0.254" y="0.508"/>
+<vertex x="0.254" y="-0.508"/>
+<vertex x="-0.254" y="-0.508"/>
+<vertex x="-0.254" y="0.508"/>
+</polygon>
+</package>
 </packages>
 <packages3d>
 <package3d name="SMD_0603C" urn="urn:adsk.eagle:package:31797266/1" type="box">
@@ -509,12 +530,12 @@ Metric Code Size 1608</description>
 <packageinstance name="SMD_1206"/>
 </packageinstances>
 </package3d>
-<package3d name="0402" urn="urn:adsk.eagle:package:31797273/1" type="box">
+<package3d name="0402" urn="urn:adsk.eagle:package:31797273/2" type="model">
 <packageinstances>
 <packageinstance name="0402"/>
 </packageinstances>
 </package3d>
-<package3d name="SMT-JUMPER_2_NO_NO-SILK" urn="urn:adsk.eagle:package:31797260/1" type="box">
+<package3d name="SMT-JUMPER_2_NO_NO-SILK" urn="urn:adsk.eagle:package:31797260/2" type="empty">
 <packageinstances>
 <packageinstance name="SMT-JUMPER_2_NO_NO-SILK"/>
 </packageinstances>
@@ -548,12 +569,12 @@ type 0204, grid 7.5 mm</description>
 <packageinstance name="R-7.5MM"/>
 </packageinstances>
 </package3d>
-<package3d name="R0502_4X" urn="urn:adsk.eagle:package:31797268/1" type="box">
+<package3d name="R0502_4X" urn="urn:adsk.eagle:package:31797268/2" type="model">
 <packageinstances>
 <packageinstance name="R0502_4X"/>
 </packageinstances>
 </package3d>
-<package3d name="FFC_1X10_VERTICAL" urn="urn:adsk.eagle:package:31797271/1" type="box">
+<package3d name="FFC_1X10_VERTICAL" urn="urn:adsk.eagle:package:31797271/2" type="model">
 <packageinstances>
 <packageinstance name="FFC_1X10_VERTICAL"/>
 </packageinstances>
@@ -575,19 +596,24 @@ type 0204, grid 7.5 mm</description>
 <packageinstance name="FFC_1.0X10"/>
 </packageinstances>
 </package3d>
-<package3d name="MSOP-8" urn="urn:adsk.eagle:package:31797270/1" type="box">
+<package3d name="MSOP-8" urn="urn:adsk.eagle:package:31797270/2" type="model">
 <packageinstances>
 <packageinstance name="MSOP-8"/>
 </packageinstances>
 </package3d>
-<package3d name="SMT_JUMP_2_NO_SMALL" urn="urn:adsk.eagle:package:31797261/1" type="box">
+<package3d name="SMT_JUMP_2_NO_SMALL" urn="urn:adsk.eagle:package:31797261/2" type="empty">
 <packageinstances>
 <packageinstance name="SMT_JUMP_2_NO_SMALL"/>
 </packageinstances>
 </package3d>
-<package3d name="SMT_JUMP_2_NO" urn="urn:adsk.eagle:package:31797262/1" type="box">
+<package3d name="SMT_JUMP_2_NO" urn="urn:adsk.eagle:package:31797262/2" type="empty">
 <packageinstances>
 <packageinstance name="SMT_JUMP_2_NO"/>
+</packageinstances>
+</package3d>
+<package3d name="C0402" urn="urn:adsk.eagle:package:31797388/2" type="model">
+<packageinstances>
+<packageinstance name="C0402"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -807,7 +833,7 @@ type 0204, grid 7.5 mm</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="+3V3" prefix="+3V3" urn="urn:adsk.eagle:component:31797275/1">
+<deviceset name="+3V3" urn="urn:adsk.eagle:component:31797275/1" prefix="+3V3">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="+3V3" x="0" y="0"/>
@@ -820,7 +846,7 @@ type 0204, grid 7.5 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FRAME_A4_FULL" prefix="FRAME" urn="urn:adsk.eagle:component:31797281/1">
+<deviceset name="FRAME_A4_FULL" urn="urn:adsk.eagle:component:31797281/1" prefix="FRAME">
 <gates>
 <gate name="G$1" symbol="FRAME_A4_FULL" x="0" y="0"/>
 </gates>
@@ -836,7 +862,7 @@ type 0204, grid 7.5 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="GND" prefix="GND" urn="urn:adsk.eagle:component:31797274/1">
+<deviceset name="GND" urn="urn:adsk.eagle:component:31797274/1" prefix="GND">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
@@ -849,35 +875,7 @@ type 0204, grid 7.5 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="RESISTOR_NET_*" prefix="R" uservalue="yes" urn="urn:adsk.eagle:component:31797278/1">
-<gates>
-<gate name="-1" symbol="R-EU" x="0" y="12.7" addlevel="must"/>
-<gate name="-2" symbol="R-EU" x="0" y="5.08" addlevel="must"/>
-<gate name="-3" symbol="R-EU" x="0" y="-2.54" addlevel="must"/>
-<gate name="-4" symbol="R-EU" x="0" y="-10.16" addlevel="must"/>
-</gates>
-<devices>
-<device name="4-0502" package="R0502_4X">
-<connects>
-<connect gate="-1" pin="1" pad="P$1"/>
-<connect gate="-1" pin="2" pad="P$8"/>
-<connect gate="-2" pin="1" pad="P$2"/>
-<connect gate="-2" pin="2" pad="P$7"/>
-<connect gate="-3" pin="1" pad="P$3"/>
-<connect gate="-3" pin="2" pad="P$6"/>
-<connect gate="-4" pin="1" pad="P$4"/>
-<connect gate="-4" pin="2" pad="P$5"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:31797268/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CAP_CERAMIC_*" prefix="C" uservalue="yes" urn="urn:adsk.eagle:component:31797283/1">
+<deviceset name="CAP_CERAMIC_*-BACKUP" prefix="C" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="C-EU" x="0" y="0"/>
 </gates>
@@ -888,7 +886,7 @@ type 0204, grid 7.5 mm</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:31797273/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:31797273/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -932,7 +930,90 @@ type 0204, grid 7.5 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="RESISTOR_*" prefix="R" uservalue="yes" urn="urn:adsk.eagle:component:31797279/1">
+<deviceset name="RESISTOR_NET_*" urn="urn:adsk.eagle:component:31797278/2" prefix="R" uservalue="yes">
+<gates>
+<gate name="-1" symbol="R-EU" x="0" y="12.7" addlevel="must"/>
+<gate name="-2" symbol="R-EU" x="0" y="5.08" addlevel="must"/>
+<gate name="-3" symbol="R-EU" x="0" y="-2.54" addlevel="must"/>
+<gate name="-4" symbol="R-EU" x="0" y="-10.16" addlevel="must"/>
+</gates>
+<devices>
+<device name="4-0502" package="R0502_4X">
+<connects>
+<connect gate="-1" pin="1" pad="P$1"/>
+<connect gate="-1" pin="2" pad="P$8"/>
+<connect gate="-2" pin="1" pad="P$2"/>
+<connect gate="-2" pin="2" pad="P$7"/>
+<connect gate="-3" pin="1" pad="P$3"/>
+<connect gate="-3" pin="2" pad="P$6"/>
+<connect gate="-4" pin="1" pad="P$4"/>
+<connect gate="-4" pin="2" pad="P$5"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:31797268/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CAP_CERAMIC_*" urn="urn:adsk.eagle:component:31797283/3" prefix="C" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="C-EU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0603" package="SMD_0603C">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:31797266/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0805" package="SMD_0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:31797265/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1206" package="SMD_1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:31797264/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0402" package="C0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:31797388/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RESISTOR_*" urn="urn:adsk.eagle:component:31797279/2" prefix="R" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="R-EU" x="0" y="0"/>
 </gates>
@@ -955,7 +1036,7 @@ type 0204, grid 7.5 mm</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:31797273/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:31797273/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -999,7 +1080,7 @@ type 0204, grid 7.5 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="JUMPER-SMT_2_NO" prefix="JP" urn="urn:adsk.eagle:component:31797276/1">
+<deviceset name="JUMPER-SMT_2_NO" urn="urn:adsk.eagle:component:31797276/2" prefix="JP">
 <description>&lt;h3&gt;Normally open jumper&lt;/h3&gt;
 &lt;p&gt;This jumper has two pads in close proximity to each other. Apply solder to close the connection.&lt;/p&gt;
 
@@ -1017,7 +1098,7 @@ type 0204, grid 7.5 mm</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:31797260/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:31797260/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -1061,7 +1142,7 @@ type 0204, grid 7.5 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP9808" prefix="IC" urn="urn:adsk.eagle:component:31797280/1">
+<deviceset name="MCP9808" urn="urn:adsk.eagle:component:31797280/2" prefix="IC">
 <gates>
 <gate name="G$1" symbol="MCP9808" x="0" y="0"/>
 </gates>
@@ -1078,7 +1159,7 @@ type 0204, grid 7.5 mm</description>
 <connect gate="G$1" pin="VCC" pad="P$8"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:31797270/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:31797270/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -1086,7 +1167,7 @@ type 0204, grid 7.5 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FFC_10P" prefix="X" uservalue="yes" urn="urn:adsk.eagle:component:31797282/1">
+<deviceset name="FFC_10P" urn="urn:adsk.eagle:component:31797282/2" prefix="X" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="CON_10PIN" x="0" y="0"/>
 <gate name="G$2" symbol="PIN_SHIELD" x="-8.128" y="-0.254" addlevel="request"/>
@@ -1128,7 +1209,7 @@ type 0204, grid 7.5 mm</description>
 <connect gate="G$2" pin="SHLD" pad="P$11 P$12"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:31797271/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:31797271/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -1136,7 +1217,7 @@ type 0204, grid 7.5 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SMD_JUMP_2_NO_" prefix="J" uservalue="yes" urn="urn:adsk.eagle:component:31797277/1">
+<deviceset name="SMD_JUMP_2_NO_" urn="urn:adsk.eagle:component:31797277/2" prefix="J" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="JUMP_2_NO" x="0" y="0"/>
 </gates>
@@ -1147,7 +1228,7 @@ type 0204, grid 7.5 mm</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:31797262/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:31797262/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -1159,7 +1240,7 @@ type 0204, grid 7.5 mm</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:31797261/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:31797261/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -1171,12 +1252,12 @@ type 0204, grid 7.5 mm</description>
 </library>
 </drawing>
 <compatibility>
-<note severity="warning" version="8.3">
+<note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
 will not be understood (or retained) with this version.
 </note>
-<note severity="warning" version="8.3">
+<note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
