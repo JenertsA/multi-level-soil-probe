@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2021-12-12T14:38:40Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 0.87,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "temp_sens_ring"
+        },
+        "Owner": "Andris Jenerts <jenerts@outlook.lv>",
+        "Size": {
+            "X": 19,
+            "Y": 20
+        }
+    }
+}
