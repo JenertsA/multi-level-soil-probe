@@ -54,3 +54,6 @@ eagle.epf
 # ignore VSCode folder
 
 .vscode/
+
+#ignore simulations for git
+simulations/
