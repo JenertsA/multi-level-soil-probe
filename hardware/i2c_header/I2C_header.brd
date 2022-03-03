@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.000123031496" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -190,33 +190,31 @@
 <board>
 <plain>
 <hole x="0" y="20.5" drill="2.2"/>
-<wire x1="2" y1="-1" x2="0" y2="1" width="1.9" layer="46" curve="-90"/>
-<wire x1="0" y1="1" x2="0" y2="8.5" width="1.9" layer="46"/>
-<wire x1="0" y1="8.5" x2="-0.5" y2="9" width="1.9" layer="46" curve="90"/>
-<wire x1="-0.5" y1="9" x2="-1" y2="9" width="1.9" layer="46"/>
-<wire x1="-1" y1="9" x2="-3.5" y2="11.5" width="1.9" layer="46" curve="-90"/>
-<wire x1="-3.5" y1="11.5" x2="-3.5" y2="21.5" width="1.9" layer="46"/>
-<wire x1="-3.5" y1="21.5" x2="0" y2="24" width="1.9" layer="46" curve="-90"/>
-<wire x1="0" y1="24" x2="1" y2="24" width="1.9" layer="46"/>
-<wire x1="1" y1="24" x2="1.5" y2="24.5" width="1.9" layer="46" curve="90"/>
-<wire x1="1.5" y1="24.5" x2="1.5" y2="28" width="1.9" layer="46"/>
-<wire x1="1.5" y1="28" x2="2.5" y2="29.5" width="1.9" layer="46" curve="-90"/>
-<circle x="0" y="20.5" radius="2" width="0" layer="41"/>
-<wire x1="18" y1="-1" x2="20" y2="1" width="1.9" layer="46" curve="90"/>
-<wire x1="20" y1="1" x2="20" y2="8.5" width="1.9" layer="46"/>
-<wire x1="20" y1="8.5" x2="20.5" y2="9" width="1.9" layer="46" curve="-90"/>
-<wire x1="20.5" y1="9" x2="21" y2="9" width="1.9" layer="46"/>
-<wire x1="21" y1="9" x2="23.5" y2="11.5" width="1.9" layer="46" curve="90"/>
-<wire x1="23.5" y1="11.5" x2="23.5" y2="21.5" width="1.9" layer="46"/>
-<wire x1="23.5" y1="21.5" x2="20" y2="24" width="1.9" layer="46" curve="90"/>
-<wire x1="20" y1="24" x2="19" y2="24" width="1.9" layer="46"/>
-<wire x1="19" y1="24" x2="18.5" y2="24.5" width="1.9" layer="46" curve="-90"/>
-<wire x1="18.5" y1="24.5" x2="18.5" y2="28" width="1.9" layer="46"/>
-<wire x1="18.5" y1="28" x2="17.5" y2="29.5" width="1.9" layer="46" curve="90"/>
-<wire x1="17.5" y1="29.5" x2="2.5" y2="29.5" width="1.9" layer="46"/>
-<wire x1="18" y1="-1" x2="2" y2="-1" width="1.9" layer="46"/>
+<wire x1="2" y1="-1" x2="0" y2="1" width="2.1" layer="46" curve="-90"/>
+<wire x1="0" y1="1" x2="0" y2="8.5" width="2.1" layer="46"/>
+<wire x1="0" y1="8.5" x2="-0.5" y2="9" width="2.1" layer="46" curve="90"/>
+<wire x1="-0.5" y1="9" x2="-1" y2="9" width="2.1" layer="46"/>
+<wire x1="-1" y1="9" x2="-3.5" y2="11.5" width="2.1" layer="46" curve="-90"/>
+<wire x1="-3.5" y1="11.5" x2="-3.5" y2="21.5" width="2.1" layer="46"/>
+<wire x1="-3.5" y1="21.5" x2="0" y2="24" width="2.1" layer="46" curve="-90"/>
+<wire x1="0" y1="24" x2="1" y2="24" width="2.1" layer="46"/>
+<wire x1="1" y1="24" x2="1.5" y2="24.5" width="2.1" layer="46" curve="90"/>
+<wire x1="1.5" y1="24.5" x2="1.5" y2="28" width="2.1" layer="46"/>
+<wire x1="1.5" y1="28" x2="2.5" y2="29.5" width="2.1" layer="46" curve="-90"/>
+<wire x1="18" y1="-1" x2="20" y2="1" width="2.1" layer="46" curve="90"/>
+<wire x1="20" y1="1" x2="20" y2="8.5" width="2.1" layer="46"/>
+<wire x1="20" y1="8.5" x2="20.5" y2="9" width="2.1" layer="46" curve="-90"/>
+<wire x1="20.5" y1="9" x2="21" y2="9" width="2.1" layer="46"/>
+<wire x1="21" y1="9" x2="23.5" y2="11.5" width="2.1" layer="46" curve="90"/>
+<wire x1="23.5" y1="11.5" x2="23.5" y2="21.5" width="2.1" layer="46"/>
+<wire x1="23.5" y1="21.5" x2="20" y2="24" width="2.1" layer="46" curve="90"/>
+<wire x1="20" y1="24" x2="19" y2="24" width="2.1" layer="46"/>
+<wire x1="19" y1="24" x2="18.5" y2="24.5" width="2.1" layer="46" curve="-90"/>
+<wire x1="18.5" y1="24.5" x2="18.5" y2="28" width="2.1" layer="46"/>
+<wire x1="18.5" y1="28" x2="17.5" y2="29.5" width="2.1" layer="46" curve="90"/>
+<wire x1="17.5" y1="29.5" x2="2.5" y2="29.5" width="2.1" layer="46"/>
+<wire x1="18" y1="-1" x2="2" y2="-1" width="2.1" layer="46"/>
 <hole x="20" y="20" drill="2.2"/>
-<circle x="20" y="20" radius="2" width="0" layer="41"/>
 <wire x1="1.9739625" y1="-0.792025" x2="-0.0260375" y2="1.207975" width="0" layer="20" curve="-90"/>
 <wire x1="-0.0260375" y1="1.207975" x2="-0.0260375" y2="8.707975" width="0" layer="20"/>
 <wire x1="-0.0260375" y1="8.707975" x2="-0.5260375" y2="9.207975" width="0" layer="20" curve="90"/>
@@ -241,6 +239,8 @@
 <wire x1="18.4739625" y1="28.207975" x2="17.4739625" y2="29.707975" width="0" layer="20" curve="90"/>
 <wire x1="17.4739625" y1="29.707975" x2="2.4739625" y2="29.707975" width="0" layer="20"/>
 <wire x1="17.9739625" y1="-0.792025" x2="1.9739625" y2="-0.792025" width="0" layer="20"/>
+<hole x="6" y="25.5" drill="2.2"/>
+<hole x="14" y="25.5" drill="2.2"/>
 </plain>
 <libraries>
 <library name="SIG_Parts">
@@ -269,35 +269,6 @@
 <rectangle x1="-2.55" y1="-1.55" x2="2.55" y2="1.55" layer="29"/>
 </package>
 </packages>
-</library>
-<library name="RAK3172_board" urn="urn:adsk.eagle:library:32884481">
-<description>Generated from &lt;b&gt;RAK3172_board.sch&lt;/b&gt;&lt;p&gt;
-by exp-lbrs-replace2.ulp</description>
-<packages>
-<package name="JST-PH_4" urn="urn:adsk.eagle:footprint:32884484/1" library_version="2">
-<wire x1="-6.075" y1="7.04" x2="6.075" y2="7.04" width="0.2" layer="21"/>
-<wire x1="6.075" y1="7.04" x2="6.075" y2="-0.56" width="0.2" layer="21"/>
-<wire x1="6.075" y1="-0.56" x2="5.275" y2="-0.56" width="0.2" layer="21"/>
-<wire x1="5.275" y1="-0.56" x2="5.275" y2="1.04" width="0.2" layer="21"/>
-<wire x1="5.275" y1="1.04" x2="-5.275" y2="1.04" width="0.2" layer="21"/>
-<wire x1="-5.275" y1="1.04" x2="-5.275" y2="-0.56" width="0.2" layer="21"/>
-<wire x1="-5.275" y1="-0.56" x2="-6.075" y2="-0.56" width="0.2" layer="21"/>
-<wire x1="-6.075" y1="-0.56" x2="-6.075" y2="7.04" width="0.2" layer="21"/>
-<smd name="1" x="3" y="0" dx="3.5" dy="1" layer="1" rot="R90"/>
-<smd name="2" x="1" y="0" dx="3.5" dy="1" layer="1" rot="R90"/>
-<smd name="3" x="-1" y="0" dx="3.5" dy="1" layer="1" rot="R90"/>
-<smd name="4" x="-3" y="0" dx="3.5" dy="1" layer="1" rot="R90"/>
-<smd name="P1" x="5.35" y="5.55" dx="3.4" dy="1.5" layer="1" rot="R90"/>
-<smd name="P2" x="-5.35" y="5.55" dx="3.4" dy="1.5" layer="1" rot="R90"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="JST-PH_4" urn="urn:adsk.eagle:package:32884558/2" type="model" library_version="2">
-<packageinstances>
-<packageinstance name="JST-PH_4"/>
-</packageinstances>
-</package3d>
-</packages3d>
 </library>
 </libraries>
 <attributes>
@@ -486,140 +457,79 @@ design rules under a new name.
 </pass>
 </autorouter>
 <elements>
-<element name="X1" library="SIG_Parts" package="FFC_1.0X10_LARGE_PADS" value="" x="10" y="5" smashed="yes"/>
-<element name="X6" library="RAK3172_board" library_urn="urn:adsk.eagle:library:32884481" package="JST-PH_4" package3d_urn="urn:adsk.eagle:package:32884558/2" value="I2C" x="10" y="21" smashed="yes"/>
-<element name="U$1" library="SIG_Parts" package="PAD3X5" value="PAD3.0X5.0" x="2.54" y="13.97" smashed="yes" rot="R270">
-<attribute name="NAME" x="4.064" y="16.129" size="0.8" layer="25" font="vector" ratio="15" rot="R270"/>
+<element name="U$1" library="SIG_Parts" package="PAD3X5" value="PAD3.0X5.0" x="17" y="15" smashed="yes" rot="R270">
+<attribute name="NAME" x="18.524" y="17.159" size="0.8" layer="25" font="vector" ratio="15" rot="R270"/>
 </element>
-<element name="U$2" library="SIG_Parts" package="PAD3X5" value="PAD3.0X5.0" x="7.5" y="14" smashed="yes" rot="R90">
-<attribute name="NAME" x="5.976" y="11.841" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
+<element name="U$2" library="SIG_Parts" package="PAD3X5" value="PAD3.0X5.0" x="12.25" y="15" smashed="yes" rot="R90">
+<attribute name="NAME" x="10.726" y="12.841" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="U$3" library="SIG_Parts" package="PAD3X5" value="PAD3.0X5.0" x="12.5" y="14" smashed="yes" rot="R90">
-<attribute name="NAME" x="10.976" y="11.841" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
+<element name="U$3" library="SIG_Parts" package="PAD3X5" value="PAD3.0X5.0" x="7.75" y="15" smashed="yes" rot="R90">
+<attribute name="NAME" x="6.226" y="12.841" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="U$4" library="SIG_Parts" package="PAD3X5" value="PAD3.0X5.0" x="17.5" y="14" smashed="yes" rot="R90">
-<attribute name="NAME" x="15.976" y="11.841" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
+<element name="U$4" library="SIG_Parts" package="PAD3X5" value="PAD3.0X5.0" x="3" y="15" smashed="yes" rot="R90">
+<attribute name="NAME" x="1.476" y="12.841" size="0.8" layer="25" font="vector" ratio="15" rot="R90"/>
 </element>
+<element name="X2" library="SIG_Parts" package="FFC_1.0X10_LARGE_PADS" value="" x="10" y="5" smashed="yes"/>
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="X1" pad="P$10"/>
-<contactref element="X6" pad="2"/>
 <contactref element="U$4" pad="P$1"/>
-<polygon width="0.5" layer="1">
-<vertex x="16.950275" y="13.5069"/>
-<vertex x="16.24733125" y="14.242346875"/>
-<vertex x="16.24733125" y="22.25266875" curve="90"/>
-<vertex x="15" y="23.5"/>
-<vertex x="11.837803125" y="23.5" curve="90"/>
-<vertex x="11.34810625" y="23.010303125"/>
-<vertex x="11.34810625" y="19.262584375"/>
-<vertex x="10.717296875" y="19.262584375"/>
-<vertex x="10.717296875" y="23.4388125" curve="-90"/>
-<vertex x="11.410859375" y="24.132375"/>
-<vertex x="16.1469125" y="24.132375" curve="-90"/>
-<vertex x="17.1599625" y="23.119325"/>
-<vertex x="17.1599625" y="15.042303125"/>
-<vertex x="18.324721875" y="13.87754375"/>
-</polygon>
-<polygon width="0.5" layer="1" isolate="0.5">
-<vertex x="14.420615625" y="6.346834375"/>
-<vertex x="14.420615625" y="7.552178125"/>
-<vertex x="17" y="10.1315625"/>
-<vertex x="17" y="15"/>
-<vertex x="18" y="15"/>
-<vertex x="18" y="10"/>
-<vertex x="15.313915625" y="7.313915625"/>
-<vertex x="15.313915625" y="6.346834375"/>
+<contactref element="X2" pad="P$1"/>
+<polygon width="0.4" layer="1" spacing="1" isolate="0.3">
+<vertex x="5.642465625" y="5.904090625"/>
+<vertex x="5.642465625" y="8.499240625"/>
+<vertex x="3.336234375" y="10.805471875"/>
+<vertex x="3.336234375" y="15.975465625"/>
+<vertex x="2.726884375" y="15.975465625"/>
+<vertex x="2.726884375" y="10.73985625"/>
+<vertex x="5.329940625" y="8.1368"/>
+<vertex x="5.329940625" y="5.904090625"/>
 </polygon>
 </signal>
 <signal name="+3V3">
-<contactref element="X1" pad="P$8"/>
-<contactref element="X6" pad="1"/>
 <contactref element="U$3" pad="P$1"/>
-<wire x1="13" y1="14.5" x2="12.5" y2="14" width="0.5" layer="1"/>
-<polygon width="0.5" layer="1" isolate="0.5">
-<vertex x="12" y="5.5"/>
-<vertex x="12" y="15.5" curve="-90"/>
-<vertex x="12.682284375" y="16.182284375"/>
-<vertex x="12.682284375" y="22.5"/>
-<vertex x="13.3055625" y="22.5"/>
-<vertex x="13.3055625" y="12.8055625" curve="-90"/>
-<vertex x="13" y="12.5"/>
-<vertex x="13" y="5.5"/>
+<contactref element="X2" pad="P$3"/>
+<polygon width="0.4" layer="1" spacing="1" isolate="0.3">
+<vertex x="7.31836875" y="15.626721875"/>
+<vertex x="7.340984375" y="15.6493375"/>
+<vertex x="8.6493375" y="15.6493375"/>
+<vertex x="9" y="16"/>
+<vertex x="9" y="14"/>
+<vertex x="7.706084375" y="12.706084375"/>
+<vertex x="7.663740625" y="5.88195625"/>
+<vertex x="7.315659375" y="5.88195625"/>
 </polygon>
 </signal>
 <signal name="SDA">
-<contactref element="X1" pad="P$4"/>
-<contactref element="X6" pad="3"/>
 <contactref element="U$2" pad="P$1"/>
-<polygon width="0.5" layer="1" isolate="0.5">
-<vertex x="9" y="5.74388125"/>
-<vertex x="9" y="11"/>
-<vertex x="9.32499375" y="11.32499375"/>
-<vertex x="9.32499375" y="22.5"/>
-<vertex x="8.712653125" y="22.5"/>
-<vertex x="8.712653125" y="16.989853125"/>
-<vertex x="7" y="15.2772"/>
-<vertex x="7" y="12"/>
-<vertex x="8" y="11"/>
-<vertex x="8" y="5.74388125"/>
+<contactref element="X2" pad="P$7"/>
+<polygon width="0.4" layer="1" spacing="1" isolate="0.3">
+<vertex x="11.31836875" y="15.626721875"/>
+<vertex x="11.340984375" y="15.6493375"/>
+<vertex x="12.6493375" y="15.6493375"/>
+<vertex x="13" y="16"/>
+<vertex x="13" y="14"/>
+<vertex x="11.706084375" y="12.706084375"/>
+<vertex x="11.663740625" y="5.88195625"/>
+<vertex x="11.315659375" y="5.88195625"/>
 </polygon>
 </signal>
 <signal name="SCL">
-<contactref element="X1" pad="P$2"/>
-<contactref element="X6" pad="4"/>
 <contactref element="U$1" pad="P$1"/>
-<wire x1="2.54" y1="12.954" x2="2.54" y2="13.589" width="0.5" layer="1"/>
-<wire x1="2.54" y1="13.589" x2="2.54" y2="13.97" width="0.5" layer="1"/>
-<polygon width="0.5" layer="1" isolate="0.4">
-<vertex x="3.383521875" y="12.961321875"/>
-<vertex x="2.88173125" y="13.4631125"/>
-<vertex x="2.0124125" y="13.4631125"/>
-<vertex x="2.172821875" y="13.623521875"/>
-<vertex x="2.172821875" y="14.980084375"/>
-<vertex x="2.391615625" y="15.198878125"/>
-<vertex x="3.347796875" y="15.198878125"/>
-<vertex x="3.347796875" y="18.440428125"/>
-<vertex x="6.07559375" y="21.168225"/>
-<vertex x="7.489253125" y="21.168225"/>
-<vertex x="7.489253125" y="20.749946875"/>
-<vertex x="5.978940625" y="20.749946875"/>
-<vertex x="3.78125625" y="18.5522625"/>
-<vertex x="3.78125625" y="12.961321875"/>
+<contactref element="X2" pad="P$9"/>
+<polygon width="0.4" layer="1" spacing="1" isolate="0.3">
+<vertex x="13.357534375" y="5.904090625"/>
+<vertex x="13.357534375" y="8.499240625"/>
+<vertex x="15.704940625" y="10.846646875"/>
+<vertex x="15.704940625" y="15.975465625"/>
+<vertex x="17.024534375" y="15.975465625"/>
+<vertex x="18" y="15"/>
+<vertex x="17.42303125" y="15"/>
+<vertex x="16.297928125" y="13.874896875"/>
+<vertex x="16.297928125" y="10.977134375"/>
+<vertex x="13.604596875" y="8.212484375"/>
+<vertex x="13.604596875" y="5.904090625"/>
 </polygon>
-<polygon width="0.5" layer="1" isolate="0.4">
-<vertex x="6.1628" y="5.941465625"/>
-<vertex x="6.1628" y="7.8931125"/>
-<vertex x="3" y="11.0559125"/>
-<vertex x="3" y="12"/>
-<vertex x="2" y="13"/>
-<vertex x="2" y="15"/>
-<vertex x="3" y="15"/>
-<vertex x="3" y="12.817728125"/>
-<vertex x="3.797475" y="12.020253125"/>
-<vertex x="3.797475" y="10.921196875"/>
-<vertex x="6.787821875" y="7.93085"/>
-<vertex x="6.787821875" y="5.941465625"/>
-</polygon>
-</signal>
-<signal name="ALERT1">
-<contactref element="X1" pad="P$3"/>
-</signal>
-<signal name="ALERT2">
-<contactref element="X1" pad="P$5"/>
-</signal>
-<signal name="ALERT3">
-<contactref element="X1" pad="P$7"/>
-</signal>
-<signal name="ALERT4">
-<contactref element="X1" pad="P$9"/>
-</signal>
-<signal name="ALERT0">
-<contactref element="X1" pad="P$1"/>
-</signal>
-<signal name="N$6">
-<contactref element="X1" pad="P$6"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
@@ -631,21 +541,4 @@ design rules under a new name.
 </mfgpreviewcolors>
 </board>
 </drawing>
-<compatibility>
-<note version="8.2" severity="warning">
-Since Version 8.2, EAGLE supports online libraries. The ids
-of those online libraries will not be understood (or retained)
-with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports URNs for individual library
-assets (packages, symbols, and devices). The URNs of those assets
-will not be understood (or retained) with this version.
-</note>
-<note version="8.3" severity="warning">
-Since Version 8.3, EAGLE supports the association of 3D packages
-with devices in libraries, schematics, and board files. Those 3D
-packages will not be understood (or retained) with this version.
-</note>
-</compatibility>
 </eagle>
