@@ -1,0 +1,31 @@
+{
+    "config": {
+        "main_stack_size":     { "value": 4096 }
+    },
+    "target_overrides": {
+        "*": {
+            "target.printf_lib": "minimal-printf",
+            "target.minimal-printf-enable-floating-point":true,
+            "platform.stdio-convert-newlines": true,
+            "platform.stdio-baud-rate": 115200,
+            "platform.default-serial-baud-rate": 115200,
+            "mbed-trace.enable": false,
+            "mbed-trace.max-level": "TRACE_LEVEL_DEBUG",
+            "lora.over-the-air-activation": true,
+            "lora.duty-cycle-on": true,
+            "lora.phy": "EU868",
+            "lora.device-eui": "{0xAC, 0x1F, 0x09, 0xFF, 0xFE, 0x05, 0x33, 0x62 }",
+            "lora.application-eui": "{ 0xAC, 0x1F, 0x09, 0xFF, 0xF8, 0x68, 0x31, 0x72 }",
+            "lora.application-key": "{0xF9, 0x30, 0x27, 0x3E, 0x8B, 0x8A, 0x92, 0x7C, 0xEE, 0xB0, 0x4F, 0xBB, 0x77, 0xEE, 0x61, 0xD9}"
+        },
+        "RAK3172_BREAKOUT": {
+            "stm32wl-lora-driver.rf_switch_config": 2,
+            "stm32wl-lora-driver.crystal_select": 0,
+            "stm32wl-lora-driver.debug_rx": "LED1",
+            "stm32wl-lora-driver.debug_tx": "LED2",
+            "stm32wl-lora-driver.debug_invert": 1
+        }
+    },
+    "macros": ["MBEDTLS_USER_CONFIG_FILE=\"mbedtls_lora_config.h\""]
+}
+
