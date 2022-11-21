@@ -1,0 +1,17 @@
+{
+    "RAK3172": {
+        "inherits": [
+            "MCU_STM32WLE5xC"
+        ],
+        "device_name": "STM32WLE5CCUx"
+    },
+    "RAK3172_BREAKOUT": {
+        "inherits": [
+            "RAK3172"
+        ],
+        "macros_add": [
+            "LED1=PA_9", 
+            "LED2=PA_10"
+        ]
+    }
+}
