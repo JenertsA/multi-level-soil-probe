@@ -57,3 +57,7 @@ eagle.epf
 
 #ignore simulations for git
 simulations/
+
+#ignore node keys
+*.keys.md
+measurements

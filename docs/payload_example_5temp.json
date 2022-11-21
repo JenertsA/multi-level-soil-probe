@@ -1,0 +1,98 @@
+{
+    "end_device_ids": {
+        "device_id": "eui-ac1f09fffe053362",
+        "application_ids": {
+            "application_id": "jenertsa-dev"
+        },
+        "dev_eui": "AC1F09FFFE053362",
+        "join_eui": "AC1F09FFF8683172",
+        "dev_addr": "260B84E9"
+    },
+    "correlation_ids": [
+        "as:up:01FYBGQB4NPV4P5TN7ARMMPPT2",
+        "gs:conn:01FYBGH0VA8R1MRHNC0D89TXSV",
+        "gs:up:host:01FYBGH0VP06MQQHBX2679JDD6",
+        "gs:uplink:01FYBGQAY5RC00NNQZ526DBFV4",
+        "ns:uplink:01FYBGQAY6APCJ2Q721NRR5C8Z",
+        "rpc:/ttn.lorawan.v3.GsNs/HandleUplink:01FYBGQAY5HCGAS8Y5KBC6QWMY",
+        "rpc:/ttn.lorawan.v3.NsAs/HandleUplink:01FYBGQB4MPM2ENVVD7HXNTA6V"
+    ],
+    "received_at": "2022-03-17T08:43:19.061570377Z",
+    "uplink_message": {
+        "session_key_id": "AX+XCeS4w0b4cKRM2yA7Pw==",
+        "f_port": 15,
+        "f_cnt": 4,
+        "frm_payload": "ABdXEBdEIBdQMBdKQBa6",
+        "decoded_payload": {
+            "sensors": [
+                {
+                    "lvl": 0,
+                    "type": "soil_temperature",
+                    "typeId": 0,
+                    "value": 19.75
+                },
+                {
+                    "lvl": 1,
+                    "type": "soil_temperature",
+                    "typeId": 0,
+                    "value": 19.56
+                },
+                {
+                    "lvl": 2,
+                    "type": "soil_temperature",
+                    "typeId": 0,
+                    "value": 19.68
+                },
+                {
+                    "lvl": 3,
+                    "type": "soil_temperature",
+                    "typeId": 0,
+                    "value": 19.62
+                },
+                {
+                    "lvl": 4,
+                    "type": "soil_temperature",
+                    "typeId": 0,
+                    "value": 18.18
+                }
+            ]
+        },
+        "rx_metadata": [
+            {
+                "gateway_ids": {
+                    "gateway_id": "sig-gw-2"
+                },
+                "time": "2022-03-17T08:43:18.808980Z",
+                "timestamp": 3457606595,
+                "rssi": -42,
+                "channel_rssi": -42,
+                "snr": 9.25,
+                "location": {
+                    "latitude": 57.149471282958984,
+                    "longitude": 24.869165420532227,
+                    "altitude": 106,
+                    "source": "SOURCE_REGISTRY"
+                },
+                "uplink_token": "CgwKCgoIc2lnLWd3LTIQw8fb8AwaDAim6cuRBhDhgfOWAyC446bL0GQ="
+            }
+        ],
+        "settings": {
+            "data_rate": {
+                "lora": {
+                    "bandwidth": 125000,
+                    "spreading_factor": 7
+                }
+            },
+            "coding_rate": "4/5",
+            "frequency": "868100000",
+            "timestamp": 3457606595
+        },
+        "received_at": "2022-03-17T08:43:18.854097598Z",
+        "consumed_airtime": "0.066816s",
+        "network_ids": {
+            "net_id": "000013",
+            "tenant_id": "ttn",
+            "cluster_id": "ttn-eu1"
+        }
+    }
+}
