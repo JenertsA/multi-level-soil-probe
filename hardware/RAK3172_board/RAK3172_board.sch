@@ -2457,8 +2457,8 @@ Holes are offset 0.005" from center, locking pins in place during soldering.
 <part name="J2" library="RAK3172_board" library_urn="urn:adsk.eagle:library:32884481" deviceset="SMD_JUMP_2_NO_" device="N" package3d_urn="urn:adsk.eagle:package:32884543/2"/>
 <part name="JP1" library="RAK3172_board" library_urn="urn:adsk.eagle:library:32884481" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_SILK" package3d_urn="urn:adsk.eagle:package:32884565/2"/>
 <part name="+3.3V_10" library="RAK3172_board" library_urn="urn:adsk.eagle:library:32884481" deviceset="+3.3V" device=""/>
-<part name="R6" library="RAK3172_board" library_urn="urn:adsk.eagle:library:32884481" deviceset="RESISTOR_*" device="0603" package3d_urn="urn:adsk.eagle:package:32884545/2"/>
-<part name="R7" library="RAK3172_board" library_urn="urn:adsk.eagle:library:32884481" deviceset="RESISTOR_*" device="0603" package3d_urn="urn:adsk.eagle:package:32884545/2"/>
+<part name="R6" library="RAK3172_board" library_urn="urn:adsk.eagle:library:32884481" deviceset="RESISTOR_*" device="0603" package3d_urn="urn:adsk.eagle:package:32884545/2" value="2.2K"/>
+<part name="R7" library="RAK3172_board" library_urn="urn:adsk.eagle:library:32884481" deviceset="RESISTOR_*" device="0603" package3d_urn="urn:adsk.eagle:package:32884545/2" value="2.2K"/>
 <part name="+3.3V_11" library="RAK3172_board" library_urn="urn:adsk.eagle:library:32884481" deviceset="+3.3V" device=""/>
 <part name="+3.3V_12" library="RAK3172_board" library_urn="urn:adsk.eagle:library:32884481" deviceset="+3.3V" device=""/>
 <part name="X6" library="RAK3172_board" library_urn="urn:adsk.eagle:library:32884481" deviceset="JST04_*" device="PH" package3d_urn="urn:adsk.eagle:package:32884558/2" value="I2C"/>
